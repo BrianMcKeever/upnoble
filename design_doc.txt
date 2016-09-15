@@ -36,15 +36,20 @@ article
 title
 subtitle
 slug
-author
+author (not sure if article can have many authors)
 body
-not sure if article can have many authors
+created_on
+updated_on
 
 author has:
 name
 description paragraph
 avatar
 articles
+
+subscription
+email address
+created_on
 
 urls:
 / home page
