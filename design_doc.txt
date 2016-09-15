@@ -1,0 +1,52 @@
+/
+search stories bar
+hamburger menu opens sidebar
+top is a "featured video" that doesn't seem to have an article
+3 "most shared" videos
+scrolling down has unlimited "fresh" articles
+there's also another subscribe link to the right
+3 "most viewed" articles on the right
+load more button at the bottom has infinite scrolling
+
+sidebar has:
+subscribe bar
+topics by group I'm assuming searching for articles by group.
+our company has a bunch of static pages
+
+each article page has:
+search
+hamburger menu/sidebar
+a large header image
+title
+author w/ link to author profile
+share buttons for fbook/twitter
+looks like markdown text intertwined w/ images/videos for the body
+At the bottom is more share buttons,
+Most popular articles at bottom and right?
+
+author page has:
+avatar
+name
+paragraph
+recent articles
+
+models:
+
+article
+title
+subtitle
+slug
+author
+body
+not sure if article can have many authors
+
+author has:
+name
+description paragraph
+avatar
+articles
+
+urls:
+/ home page
+/slug -> article get
+/author-name -> author get (doesn't seem to be a way to differentiate the two)
