@@ -1,0 +1,12 @@
+
+<div id="user_nav">
+  <% if current_user %>
+    <%= link_to "Logout", session_path %>
+  <% else %>
+    <%= link_to "Register", new_user_path %> |
+    <%= link_to "Login", new_user_session_path %>
+  <% end %>
+</div>
+
+
+<h1>Portal</h1>
