@@ -5,6 +5,7 @@ class UserSessionsController < ApplicationController
 
   def create
     @user_session = UserSession.create(user_session_params)
+    
     if @user_session.save
       redirect_to root_url
     else
@@ -14,12 +15,12 @@ class UserSessionsController < ApplicationController
 
   def destroy
     current_user_session.destroy
-    redirect_to "new"
+    redirect_to new_user_session_url
   end
 
   private
 
   def user_session_params
-    params.require(:user_session).permit(:email, :password)
+    params.require(:user_session).permit(:email, :password).to_hash
   end
 end
