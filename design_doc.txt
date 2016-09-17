@@ -55,3 +55,6 @@ urls:
 / home page
 /slug -> article get
 /author-name -> author get (doesn't seem to be a way to differentiate the two)
+
+require login for creating articles
+create subscriptions
